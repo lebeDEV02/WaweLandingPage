@@ -601,6 +601,7 @@ a[class] {
 .packages__items {
 	display: flex;
 	justify-content: space-between;
+	column-gap: 20px;
 }
 
 .packages__item {
@@ -957,10 +958,10 @@ ul.item__service {
 	.advantages__title {
 		margin-bottom: 75px;
 	}
-	.advantages {
+	.advantages, .packages {
 		padding: 100px 0 100px;
 	}
-	.advantages__items, .blockquote, .blog__title, .team__title {
+	.advantages__items, .blockquote, .blog__title, .team__title, .packages__title {
 		margin-bottom: 50px;
 	}
 	.motivation__title, .gallery__title {
@@ -977,6 +978,13 @@ ul.item__service {
 	}
 	.team {
 		padding-bottom: 80px;
+	}
+	.packages__items {
+		flex-wrap: wrap;
+	}
+	.packages__item {
+		width: 80%;
+		margin: 0 auto 30px;
 	}
 }
 
@@ -1028,6 +1036,9 @@ ul.item__service {
 	.advantages {
 		padding: 50px 0 50px;
 	}
+	.packages {
+		padding: 50px 0 50px;
+	}
 }
 
 @media(max-width: 500px) {
@@ -1070,6 +1081,9 @@ ul.item__service {
 	}
 	.more__link {
 		padding: 23px 40px;
+	}
+	.packages__item {
+		width: 100%;
 	}
 }
 
