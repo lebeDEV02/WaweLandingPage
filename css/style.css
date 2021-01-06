@@ -565,6 +565,7 @@ a[class] {
 .team__items {
 	display: flex;
 	justify-content: space-between;
+	column-gap: 20px;
 }
 
 .team__item {
@@ -925,7 +926,7 @@ ul.item__service {
 		max-width: none;
 		margin-bottom: 20px;
 	}
-	.blockquote, .statistics, .video__inner, .blog__title {
+	.blockquote, .statistics, .video__inner, .blog__title, .team__title {
 		margin-bottom: 100px;
 	}
 	.blog {
@@ -936,6 +937,9 @@ ul.item__service {
 	}
 	.gallery__more {
 		margin: 50px 0 100px;
+	}
+	.team {
+		padding-bottom: 163px;
 	}
 }
 
@@ -956,11 +960,23 @@ ul.item__service {
 	.advantages {
 		padding: 100px 0 100px;
 	}
-	.advantages__items, .blockquote, .blog__title {
+	.advantages__items, .blockquote, .blog__title, .team__title {
 		margin-bottom: 50px;
 	}
 	.motivation__title, .gallery__title {
 		margin-bottom: 40px;
+	}
+	.team__items {
+		display: block;
+	}
+	img {
+		margin: 0 auto;
+	}
+	.team__item+.team__item {
+		margin-top: 20px;
+	}
+	.team {
+		padding-bottom: 80px;
 	}
 }
 
