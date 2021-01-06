@@ -1111,6 +1111,9 @@ ul.item__service {
 	.buttons__item+.buttons__item {
 		margin: 20px 0px 0px 0px;
 	}
+	.footer__logo {
+		padding: 30px 0;
+	}
 }
 
 @media(max-width: 400px) {
