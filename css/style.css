@@ -810,6 +810,15 @@ ul.item__service {
 	.motivation__inner {
 		padding-top: 50px;
 	}
+	.gallery__images {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+	.gallery__images img {
+		max-width: 100%;
+		display: block;
+	}
 }
 
 @media(max-width: 1150px) {
@@ -900,7 +909,7 @@ ul.item__service {
 	.title {
 		font-size: 36px;
 	}
-	.about__title {
+	.about__title, .gallery__title {
 		margin-bottom: 75px;
 	}
 	.section__about {
@@ -915,6 +924,15 @@ ul.item__service {
 	.footer__text {
 		max-width: none;
 		margin-bottom: 20px;
+	}
+	.blockquote, .statistics, .video__inner {
+		margin-bottom: 100px;
+	}
+	.blockquote__author {
+		margin-left: 50%;
+	}
+	.gallery__more {
+		margin: 50px 0 100px;
 	}
 }
 
@@ -935,11 +953,29 @@ ul.item__service {
 	.advantages {
 		padding: 100px 0 100px;
 	}
-	.advantages__items {
+	.advantages__items, .blockquote {
 		margin-bottom: 50px;
 	}
-	.motivation__title {
+	.motivation__title, .gallery__title {
 		margin-bottom: 40px;
+	}
+}
+
+@media(max-width: 650px) {
+	.blockquote__author {
+		margin: 20px 0px 0px 0px;
+		text-align: center;
+	}
+	.blockquote {
+		font-size: 28px;
+		line-height: 30px;
+	}
+	.statistics {
+		flex-wrap: wrap;
+	}
+	.statistics__item {
+		width: 50%;
+		margin-bottom: 20px;
 	}
 }
 
@@ -979,6 +1015,16 @@ ul.item__service {
 	.motivation {
 		padding-bottom: 50px;
 	}
+	.gallery__buttons {
+		display: block;
+		margin-bottom: 25px;
+	}
+	.buttons__item {
+		display: block;
+	}
+	.buttons__item+.buttons__item {
+		margin: 20px 0px 0px 0px;
+	}
 }
 
 @media(max-width: 400px) {
@@ -989,10 +1035,17 @@ ul.item__service {
 	.header__subtitle {
 		font-size: 16px;
 	}
+	.more__link {
+		padding: 23px 40px;
+	}
 }
 
 @media(max-width: 374px) {
 	.footer__statistics {
 		display: none;
+	}
+	.statistics__item {
+		width: 100%;
+		margin-bottom: 30px;
 	}
 }
