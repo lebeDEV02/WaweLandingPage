@@ -823,6 +823,18 @@ ul.item__service {
 	}
 }
 
+@media(max-width: 1200px) {
+	.feedback__items {
+		flex-flow: column-reverse
+	}
+	.feedback__info {
+		margin-bottom: 50px;
+	}
+	.feedback__applicaton {
+		width: auto;
+	}
+}
+
 @media(max-width: 1150px) {
 	.motivation {
 		background-image: none;
@@ -942,6 +954,15 @@ ul.item__service {
 	.team {
 		padding-bottom: 163px;
 	}
+	.map {
+		padding: 100px 0;
+	}
+	.feedback__title {
+		margin-bottom: 120px;
+	}
+	.feedback {
+		padding-bottom: 100px;
+	}
 }
 
 @media(max-width:768px) {
@@ -950,7 +971,7 @@ ul.item__service {
 		line-height: 125px;
 	}
 	.title {
-		font-size: 26px;
+		font-size: 24px;
 	}
 	.text__item {
 		font-size: 16px;
@@ -964,8 +985,14 @@ ul.item__service {
 	.advantages__items, .blockquote, .blog__title, .team__title, .packages__title {
 		margin-bottom: 50px;
 	}
+	.feedback__items {
+		margin-bottom: 100px;
+	}
 	.motivation__title, .gallery__title {
 		margin-bottom: 40px;
+	}
+	.feedback {
+		padding-bottom: 50px;
 	}
 	.team__items {
 		display: block;
@@ -985,6 +1012,12 @@ ul.item__service {
 	.packages__item {
 		width: 80%;
 		margin: 0 auto 30px;
+	}
+	.map {
+		display: none;
+	}
+	.feedback__title {
+		margin: 120px 0;
 	}
 }
 
@@ -1018,6 +1051,12 @@ ul.item__service {
 	.blog {
 		padding-bottom: 50px;
 	}
+	.feedback__general, .feedback__social, .feedback__adress, .social__tel {
+		font-size: 18px;
+		line-height: 24px;
+		max-width: none;
+		margin-right: 0;
+	}
 }
 
 @media(max-width: 576px) {
@@ -1033,11 +1072,14 @@ ul.item__service {
 	.section__about {
 		padding: 50px 0 60px;
 	}
-	.advantages {
+	.advantages, .packages {
 		padding: 50px 0 50px;
 	}
-	.packages {
-		padding: 50px 0 50px;
+	.feedback__title {
+		margin: 60px 0;
+	}
+	.feedback__info {
+		padding: 50px 10px;
 	}
 }
 
@@ -1084,6 +1126,22 @@ ul.item__service {
 	}
 	.packages__item {
 		width: 100%;
+	}
+	.feedback__submit {
+		padding: 24px 65px;
+		margin: 0 auto;
+		display: block;
+	}
+	.media {
+		flex-wrap: wrap;
+	}
+	.media__link {
+		width: 50%;
+		display: inline-block;
+		text-align: center;
+	}
+	.media__link+.media__link {
+		margin-top: 30px;
 	}
 }
 
